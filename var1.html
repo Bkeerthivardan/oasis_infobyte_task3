@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute Page - APJ ABDUL KALAM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <style>
+            /* Reset some default styles */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+        
+            /* Global styles */
+            body {
+                font-family: 'Libre Franklin', sans-serif;
+                font-size: 1.2rem;
+                line-height: 1.5;
+                font-weight: 400;
+                color: #ADB5BD;  /* Bluish grey */
+                background-color: #121212;  /* Super dark grey */
+                margin: 0;
+            }
+        
+            a {
+                color: #495057;  /* Dark bluish-grey */
+                text-decoration: none;
+            }
+        
+            /* Header section */
+            .banner {
+                background-color: #212529;  /* Dark theme background */
+                color: #ADB5BD;  /* Bluish grey */
+                padding: 3rem;
+                text-align: center;
+            }
+        
+            .tribute-badge {
+                font-size: 1.5rem;
+                display: block;
+                margin-bottom: 10px;
+            }
+        
+            h1 {
+                font-size: 3.5rem;
+                font-weight: 600;
+                letter-spacing: 3px;
+                margin-top: 20px;
+            }
+        
+            /* Scroll down button */
+            #scroll-down {
+                position: relative;
+                top: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 2rem;
+                padding: 1rem 2rem;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                background-color: #343A40;  /* Very dark grey */
+                color: #E9ECEF;  /* Light grey for contrast */
+                text-decoration: none;
+                z-index: 1;
+            }
+        
+            /* Second section */
+            .quote {
+                background-color: #343A40;  /* Very dark grey */
+                padding: 3rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 10px;
+            }
+        
+            .quote h2 {
+                font-size: 2rem;
+                font-weight: 400;
+                text-align: center;
+                color: #E9ECEF;  /* Light grey */
+            }
+        
+            .img-div {
+                margin-top: 20px;
+            }
+        
+            .img-div img {
+                display: flex;
+                max-width: 100%;
+                border-radius: 10px;
+                justify-content: center;
+            }
+        
+            /* Up and Down navigation */
+            .up-down {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+            }
+        
+            .scroll-down,
+            .scroll-up {
+                font-size: 2rem;
+                color: #495057;  /* Dark bluish-grey */
+                text-decoration: none;
+                transition: color 0.3s;
+            }
+        
+            .scroll-down:hover,
+            .scroll-up:hover {
+                color: #ADB5BD;  /* Bluish grey */
+            }
+        
+            /* Biography section */
+            .biography {
+                background-color: #212529;  /* Dark theme background */
+                color: #E9ECEF;  /* Light grey for contrast */
+                padding: 3rem;
+            }
+        
+            .biography h3 {
+                font-size: 2.5rem;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+        
+            .bio {
+                background-color: #343A40;  /* Very dark grey */
+                padding: 2rem;
+                border-radius: 10px;
+                color: #E9ECEF;  /* Light grey for contrast */
+            }
+        
+            .bio h4 {
+                font-size: 1.8rem;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+        
+            .bio p {
+                font-size: 1.2rem;
+                font-weight: 400;
+                line-height: 1.5;
+            }
+        
+            /* Quote section */
+            .quote {
+                background-color: #343A40;  /* Very dark grey */
+            }
+        
+            .quote img {
+                max-width: 100%;
+                border-radius: 10px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);  /* Enhanced shadow for dark theme */
+            }
+        </style>
+        
+</head>
+
+<body>
+    <section class="banner" id="front-page">
+        <div class="container">
+            <span class="tribute-badge">Tribute to</span>
+            <h1>APJ ABDUL KALAM</h1>
+        </div>
+        <a id="scroll-down" href="#second-page"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+    </section>
+
+    <section class="quote" id="second-page">
+        <div class="container">
+            <span class="tribute-badge">Quote</span>
+            <h2>"Dream, dream, dream. Dreams transform into thoughts and thoughts result in action."</h2>
+            <div class="img-div">
+                <img src="master.jpg"
+                    alt="APJ ABDUL KALAM">
+            </div>
+        </div>
+        <div class="up-down">
+            <div>
+                <a class="scroll-up" href="#front-page"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+            </div>
+            <div>
+                <a class="scroll-down" href="#third-page"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="biography" id="third-page">
+        <div class="container">
+            <h3>Biography</h3>
+            <div class="bio">
+                <div>
+                    <p>Renowned Indian scientist and former President, Dr. A.P.J. Abdul Kalam, was born on October 15, 1931, in the coastal town of Rameswaram, Tamil Nadu. Kalam's early fascination with flight and science can be traced back to his childhood, where he grew up listening to stories about World War II and the simplicity of his parents' lives. His father, Jainulabdeen, was an imam and a boat owner, while his mother, Ashiamma, was a dedicated housewife. After completing his schooling at Schwartz Higher Secondary School, Ramanathapuram, Kalam went on to study physics at St. Joseph's College, Tiruchirappalli. Later, he shifted his focus to aerospace engineering, attending the Madras Institute of Technology. This foundation set the stage for his future contributions to India's space and defense sectors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
